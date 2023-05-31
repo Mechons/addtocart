@@ -24,6 +24,7 @@ export const cartReducer = (state = INIT_STATE, action) => {
       }
 
     case "DELETE_ITEM":
+      
       const data = state.carts.filter((el) => el.id !== action.payload);
       // console.log(data);
 

@@ -46,12 +46,12 @@ export const Header = () => {
     <>
       <Navbar bg="dark" variant="dark" style={{ height: "60px" }}>
         <Container>
-          <Nav.Link to="/" className="text-light">
+          <NavLink to="/" className="text-light">
             Add to Cart
+          </NavLink>
+          <Nav.Link className="me-auto">
+            <NavLink to="/">Home</NavLink>
           </Nav.Link>
-          <Nav className="me-auto">
-            <Nav.Link to="/">Home</Nav.Link>
-          </Nav>
           <Badge
             badgeContent={getData.length}
             color="primary"
